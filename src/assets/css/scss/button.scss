@@ -1,0 +1,62 @@
+@import "typography.scss";
+$btn-radius: .5rem;
+
+
+
+.btn{
+    position: relative;
+    cursor:pointer;
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .btn-top{
+        box-shadow:inset 0 0 0 .25rem #000;
+        border-radius:$btn-radius;
+        background:#fff;
+        line-height: 3.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0 1.25rem;
+        @extend %button;
+        transform: translate(0%, -100%);
+        transition: all .4s cubic-bezier(0,3,.79,.72);
+    }
+    .btn-bottom{
+        border-radius:$btn-radius;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translate(8px, 8px);
+        display: block;
+    }
+    &:hover{
+        .btn-top{
+            transform: translate(4px, calc(-100% + 4px) );
+            transition: all .25s cubic-bezier(.2,.01,.2,1);
+        }
+        .btn-bottom{
+            background: url('/images/backbtn.png') 50%;
+            animation: mymove linear 2s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    &.round{
+        .btn-top{
+        padding: 1rem;
+        line-height: 1;
+        }
+        .btn-bottom, .btn-top{
+            border-radius: 2rem;
+        }
+        i{
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+    }
+}

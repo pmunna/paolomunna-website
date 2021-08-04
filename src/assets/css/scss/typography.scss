@@ -1,0 +1,60 @@
+@font-face {
+    font-family:'Science Gothic';
+	src: url('/fonts/ScienceGothic.ttf') format('truetype-variations');
+    font-weight: 100 900;
+}
+@import "functions.scss";
+
+$min_width: 320px;
+$max_width: 1440px;
+$colors-dark: #000;
+
+h1, .h1{
+  @extend %title;
+}
+
+%title {  
+    $title-min_font: 16px;
+    $title-max_font: 24px;
+    @include fluid-type($min_width, $max_width, $title-min_font, $title-max_font);
+  
+    color: $colors-dark;
+    font-family: "Science Gothic";
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+%button{
+    $button-min_font: .75rem;
+    $button-max_font: 1rem;
+    @include fluid-type($min_width, $max_width, $button-min_font, $button-max_font);
+
+    color:$colors-dark;
+    font-weight: 500;
+    font-family: "Science Gothic";
+    letter-spacing: 1px;
+}
+
+%text{
+    $text-min_font: .75rem;
+    $text-max_font: 1rem;
+    @include fluid-type($min_width, $max_width, $text-min_font, $text-max_font);
+
+    font-family: "Science Gothic";
+}
+
+%link, a{
+    font-family: "Science Gothic";
+    font-variation-settings: "wght" 708, "wdth" 50, "YOPQ" 122, "slnt" 0;
+
+    text-decoration: none;
+    color: #111;
+    margin: auto 1rem;
+    transform: scaleY(.9);
+    transition:all .5s ease-in-out;
+    font-size: 1.25rem;
+    &:hover{
+    transition:all .25s ease-in-out;
+    }
+}

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <title>Paolo Munna</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="title" content="Milan Graphic Designer - Paolo Munna">
+        <meta name="description" content="Paolo Munna graphic designer, Milano, Italia. I’m a Milan-based UI/UX designer interested in designing products that bring together creativity and pragmatism.">
+        <meta name="keywords" content="Paolo Munna, UX Designer, UI Designer, Freelance, Milano, italia, cologno, UI design, UX design, Designer, Grafico, UI/UX design, ITSOS, ITSOS marie curie, ">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Paolo Munna">
+        <meta name="theme-color" content="#b21e48"/>
+
+        <!-- OG -->
+        <meta property="og:locale" content="it_IT" />
+        <meta property="og:type" content="website" />
+        <meta name="og:title" property="og:title" content="Paolo Munna - Milan Graphic Designer" />
+        <meta property="og:description" content="I’m a Milan-based UI/UX designer interested in designing products that bring together creativity and pragmatism.">
+        <meta property="og:url"  content="http://www.paolomunna.it/" />
+        <meta property="og:image" content="http://www.paolomunna.it/img/og280x150.jpg" />
+
+        <!-- TWITTER -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@paolomunna" />
+        <meta name="twitter:creator" content="@paolomunna" />
+        <meta name="twitter:title" content="Paolo Munna -  Graphic designer" />
+        <meta name="twitter:description" content="I’m a Milan-based UI/UX designer interested in designing products that bring together creativity and pragmatism." />
+        <meta name="twitter:image" content="http://www.paolomunna.it/img/og680x335.jpg" />        
+        <meta name=”twitter:url” content=”http://www.paolomunna.it/” />
+
+        <!-- FAVICON -->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <meta name="msapplication-TileImage" content="img/favicon/apple-icon-144x144.png">
+	
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
+        <link rel="canonical" href="http://www.paolomunna.it/"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    </head>
+<body>
+
+<!--LOADER FILTER-->
+<div style="display:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -5" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+</div>
+
+<div id="main" class="container">
+    <div class="inner-wrapper">
+        <nav>
+            <!--Logo-->
+            <div class="rainbow-wordmark">
+                <span class="rainbow-wordmark__text">Paolo Munna</span>
+                <canvas class="rainbow-wordmark__canvas"></canvas>
+                <img alt="paolo munna logo" class="rainbow-wordmark__image" src="img/paolomunna.png" />
+            </div>
+            <!--Navbar-->
+            <div class="buttons">
+                <button id="aboutme" class="btn"></button>
+                <a aria-label="link to my curriculum" target="_blank" href="docs/munna_curriculum.pdf"><button id="resume" class="btn"></button></a>
+            </div>
+            <!--Navbar mobile-->
+            <div class="buttons-m">
+                <button id="aboutme-m" class="btn-m"></button>
+                <a aria-label="download my curriculum" target="_blank" href="docs/munna_curriculum.pdf"><button id="resume" class="btn-m"></button></a>
+            </div>
+        </nav>
+        <main id="car" class="init trans">
+            <div class="tutorial show"></div>
+            <div id="hair" class="carousel">
+                <div class="carousel-cell"><img alt="normal face" src="img/faces/hair/normal.png"/></div>
+                <div class="carousel-cell"><img alt="worried hair" src="img/faces/hair/worried.png"/></div>
+                <div class="carousel-cell"><img alt="serious hair" src="img/faces/hair/serious.png"/></div>
+                <div class="carousel-cell"><img alt="unsure hair" src="img/faces/hair/what.png"/></div>
+                <div class="carousel-cell"><img alt="surprised hair" src="img/faces/hair/surprised.png"/></div>
+            </div>
+            <div id="eyes" class="carousel">
+                <div class="carousel-cell"><img alt="annoyed eyes" src="img/faces/eyes/annoyed.png"/></div>
+                <div class="carousel-cell"><img alt="closed eyes" src="img/faces/eyes/closed.png"/></div>
+                <div class="carousel-cell"><img alt="open eyes" src="img/faces/eyes/open.png"/></div>
+                <div class="carousel-cell"><img alt="sunglasses eyes" src="img/faces/eyes/glasses.png"/></div>
+                <div class="carousel-cell"><img alt="surprised eyes" src="img/faces/eyes/surprised.png"/></div>
+            </div>
+            <div id="mouth" class="carousel">
+                <div class="carousel-cell"><img alt="drooling mouth" src="img/faces/mouth/drool.png"/></div>
+                <div class="carousel-cell"><img alt="cat mouth" src="img/faces/mouth/uwu.png"/></div>
+                <div class="carousel-cell"><img alt="mad mouth" src="img/faces/mouth/mad.png"/></div>
+                <div class="carousel-cell"><img alt="happy mouth" src="img/faces/mouth/happy.png"/></div>
+                <div class="carousel-cell"><img alt="angry mouth" src="img/faces/mouth/grr.png"/></div>
+            </div>
+        </main>
+        <footer>
+            <button id="email" data-clipboard-target="#email-copy" class="btn"><div class="copied">Copied!</div></button> 
+            <!--hidden input--><label class="hidden">copy text</label><input id="email-copy" type="text" value="paolomunna@gmail.com">
+            <a rel="noopener" aria-label="link to my dribbble" href="https://dribbble.com/Paolomunna" target="_blank" ><button id="dribbble" class="btn"></button></a>
+            <a rel="noopener" aria-label="link to my linkedin" href="https://www.linkedin.com/in/paolo-munna/" target="_blank" ><button id="linkedin" class="btn"></button></a>
+            <a rel="noopener" aria-label="link to my instagram" href="https://www.instagram.com/paolomunna/" target="_blank"><button id="instagram" class="btn"></button></a>
+            <a rel="noopener" aria-label="link to my behance" href="https://www.behance.net/paolomunna" target="_blank"><button id="behance" class="btn"></button></a>
+        </footer>
+        <button id="mobile-toggle-btn" class="btn-m open"></button>
+    </div>
+</div>
+
+
+
+<div id="aboutme-menu" class="container">
+    <div class="inner-wrapper">
+            <div class="text">
+                <h1>Paolo Munna</h1>
+                <p>I’m a Milan-based UI/UX designer interested in designing products that bring together creativity and pragmatism.<br>
+                I started my journey as a front-end developer, later on I got into creative design and user behaviour. I'm influenced by art, anthropology and motion design
+                <br><br>
+                I've graduated in information technology at ITSOS Marie Curie, and web design at Galdus. <br>I have worked for <a href="https://ies-italia.it/it/">IES Italia</a>, <a href="https://www.urbanfitness.it/">Urban Fitness</a> and <a href="https://www.bemind.me/">Bemind</a>. 
+                <br>
+                <span class="mini">Also I love every single dog in the world.</span></p>
+            </div>
+            <button id="close-aboutme-menu" class="btn-m close-icon"></button>
+            <div class="about-image"><img alt="paolo munna face picture" src="img/me.jpg" ></div>     
+    </div>
+</div>
+
+<div id="mobile-menu" class="mobile-menu">
+    <div class="menu-container">
+        <p>You can find me here:</p>
+        <button id="email-m" data-clipboard-target="#email-copy-m" class="btn-m"><div class="copied">Copied!</div></button> 
+        <!--hidden input--><label class="hidden">copy text</label><input id="email-copy-m" value="paolomunna@gmail.com">
+        <a rel="noopener" aria-label="link to my dribbble" target="_blank" href="https://dribbble.com/Paolomunna" target="_blank" ><button id="dribbble" class="btn"></button></a>
+        <a rel="noopener" aria-label="link to my linkedin" target="_blank" href="https://www.linkedin.com/in/paolo-munna/" target="_blank" ><button id="linkedin" class="btn"></button></a>
+        <a rel="noopener" aria-label="link to my instagram" target="_blank" href="https://www.instagram.com/paolomunna/" target="_blank"><button id="instagram" class="btn"></button></a>
+        <a rel="noopener" aria-label="link to my behance" target="_blank" href="https://www.behance.net/paolomunna" target="_blank"><button id="behance" class="btn"></button></a>
+    </div>
+</div>
+
+<div id="mobile-drop" class="backdrop mobile-toggle"></div>
+
+<div class="preloader">
+    <div class="border">
+        <div class="image-loader">
+            <div class="rect">
+                <div class="dot d_i"></div>
+                <div class="dot d_ii"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<meta name="google-site-verification" content="-ZOv1cwFOaO9_u6fMLm8V44NPPw6WDexcabSvZhj1dc" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script><!-- Using the offical p5.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script><!--copy to clipboard-->
+<script src="js/sketch.js"></script><!--graffi-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script><!--graffi-->
+<script  src="js/rainbow-wordmark/rainbow-wordmark.js"></script><!--logo effect-->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script><!--carousel-->
+<script>//carousel
+
+$('.carousel').each(function( index ) {
+    $(this).flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    prevNextButtons: false,
+    wrapAround: true,
+    initialIndex: Math.floor( Math.random() * 5 ),
+    pageDots: false,
+    ImagesLoaded: true
+    });
+    //click to change
+    var $carousel = $(this).flickity();
+    $carousel.on( 'staticClick.flickity', function( event, pointer, cellElement, cellIndex ) {
+        if ( typeof cellIndex == 'number' ) {
+            $carousel.flickity( 'selectCell', cellIndex );
+        }
+    });
+});
+
+</script>
+<script>
+    $("#mobile-toggle-btn").on('click', function(){
+        $("#mobile-menu").toggleClass("show");
+        $(this).toggleClass("close-icon");
+        $("#mobile-drop").toggleClass("show");
+    });    
+    $("#mobile-drop").on('click', function(){
+        $(this).toggleClass("show");
+        $("#mobile-menu").removeClass("show");
+        $("#mobile-toggle-btn").removeClass("close-icon");
+        $("#aboutme-menu").removeClass("show");
+    });
+    $("#aboutme-m").on('click', function(){
+        $("#aboutme-menu").toggleClass("show");
+    });
+    $("#close-aboutme-menu-m").on('click', function(){
+        $("#aboutme-menu").toggleClass("show");
+    });
+    $("#aboutme").on('click', function(){
+        $("#aboutme-menu").toggleClass("show");
+        $("#mobile-drop").toggleClass("show");
+    });
+    $("#close-aboutme-menu").on('click', function(){
+        $("#aboutme-menu").toggleClass("show");
+        $("#mobile-drop").removeClass("show");
+    });
+    $(".carousel").on('click', function(){
+        $(".tutorial").removeClass("show");
+    });
+</script>
+
+<script>//logo and dump
+$(document).ready(function() {
+    $("#car").removeClass("init");
+    setTimeout(function() {
+        $("#car").removeClass("trans");
+    }, 1100);
+    var classes = [ 'orange', 'blue', 'pink', 'yellow', 'purple', 'green' ];
+    $('#main').each(function(i) {
+        $(this).addClass(classes[ Math.floor( Math.random()*classes.length ) ] );
+    });
+   
+});
+//reload page
+$(window).resize(function(){location.reload();});
+</script>
+
+<script> //copytoclipboard
+        var btns = document.querySelectorAll('button');
+        var clipboard = new ClipboardJS(btns);
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+        
+    $("#email").on('click', function(){
+        $('.copied').addClass('copy-clicked').delay(1000).queue(function( next ){
+        $(this).removeClass('copy-clicked'); 
+        next();
+        });
+    });
+    $("#email-m").on('click', function(){
+        $('.copied').addClass('copy-clicked').delay(1000).queue(function( next ){
+        $(this).removeClass('copy-clicked'); 
+        next();
+        });
+    });
+</script>
+<script>//loader timeout
+    document.addEventListener("DOMContentLoaded", function(){
+        $('.preloader').delay(300).fadeOut('slow');
+        
+        $('.preloader')
+            .delay(300)
+            .fadeOut();
+    });
+</script>
+
+<!--jsonld-->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Paolo Munna",
+    "url": "http://www.paolomunna.it/",
+    "image": "http://www.paolomunna.it/img/me.jpg",
+    "sameAs": [
+    "https://www.facebook.com/paolo.munna",
+    "https://twitter.com/paolomunna",
+    "https://www.instagram.com/paolomunna/",
+    "https://www.youtube.com/user/vervainsubs",
+    "http://www.paolomunna.it/"
+    ],
+    "jobTitle": "Graphic designer",
+    "worksFor": {
+    "@type": "Organization",
+    "name": "Bemind"
+    }  
+}
+{
+"@context": "https://schema.org/",
+"@type": "WebSite",
+"name": "Paolo Munna",
+"url": "http://www.paolomunna.it/"
+}
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141379436-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141379436-1');
+</script>
+</body>
+</html>
