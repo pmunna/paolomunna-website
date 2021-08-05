@@ -22,11 +22,11 @@ const Slider = ({ title, cta_link }) => {
         reloadOnUpdate={true} 
         static // default false
     >
-        <img src={'/images/faces/hair/normal.png'} alt=" "/>
-        <img src={'/images/faces/hair/serious.png'} alt=" "/>
-        <img src={'/images/faces/hair/surprised.png'} alt=" "/>
-        <img src={'/images/faces/hair/what.png'} alt=" "/>
-        <img src={'/images/faces/hair/worried.png'} alt=" "/>
+        <div className="cell"><img src={'/images/faces/hair/normal.png'} alt=" "/></div>
+        <div className="cell"><img src={'/images/faces/hair/serious.png'} alt=" "/></div>
+        <div className="cell"><img src={'/images/faces/hair/surprised.png'} alt=" "/></div>
+        <div className="cell"><img src={'/images/faces/hair/what.png'} alt=" "/></div>
+        <div className="cell"><img src={'/images/faces/hair/worried.png'} alt=" "/></div>
     </Flickity>
         <Flickity
             className={'carousel'} 
@@ -36,11 +36,11 @@ const Slider = ({ title, cta_link }) => {
             reloadOnUpdate={true} 
             static // default false
         >
-            <img src={'/images/faces/eyes/annoyed.png'} alt=" "/>
-            <img src={'/images/faces/eyes/closed.png'} alt=" "/>
-            <img src={'/images/faces/eyes/glasses.png'} alt=" "/>
-            <img src={'/images/faces/eyes/open.png'} alt=" "/>
-            <img src={'/images/faces/eyes/surprised.png'} alt=" "/>
+            <div className="cell"><img src={'/images/faces/eyes/annoyed.png'} alt=" "/></div>
+            <div className="cell"><img src={'/images/faces/eyes/closed.png'} alt=" "/></div>
+            <div className="cell"><img src={'/images/faces/eyes/glasses.png'} alt=" "/></div>
+            <div className="cell"><img src={'/images/faces/eyes/open.png'} alt=" "/></div>
+            <div className="cell"><img src={'/images/faces/eyes/surprised.png'} alt=" "/></div>
         </Flickity>
         <Flickity
             className={'carousel'} 
@@ -50,11 +50,11 @@ const Slider = ({ title, cta_link }) => {
             reloadOnUpdate={true} 
             static // default false
         >
-            <img src={'/images/faces/mouth/drool.png'} alt=" "/>
-            <img src={'/images/faces/mouth/grr.png'} alt=" "/>
-            <img src={'/images/faces/mouth/happy.png'} alt=" "/>
-            <img src={'/images/faces/mouth/mad.png'} alt=" "/>
-            <img src={'/images/faces/mouth/uwu.png'} alt=" "/>
+            <div className="cell"><img src={'/images/faces/mouth/drool.png'} alt=" "/></div>
+            <div className="cell"><img src={'/images/faces/mouth/grr.png'} alt=" "/></div>
+            <div className="cell"><img src={'/images/faces/mouth/happy.png'} alt=" "/></div>
+            <div className="cell"><img src={'/images/faces/mouth/mad.png'} alt=" "/></div>
+            <div className="cell"><img src={'/images/faces/mouth/uwu.png'} alt=" "/></div>
         </Flickity>
     </div>
     )

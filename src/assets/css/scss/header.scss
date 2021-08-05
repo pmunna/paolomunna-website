@@ -1,21 +1,44 @@
 header{
-    padding:0 0 2rem 0;
+    padding: 1.5rem;
     display: flex;
     position: relative;
     .logo-container{
         display: flex;
+        position: relative;
         @media screen and (max-width: 991px) {
         margin:0 1rem
         }
-        img{
+        /*img{
             width: 280px;
             @media screen and (max-width: 991px) {
                 width: 100%;
+            }
+        }*/
+        .logo-name{
+            display: flex;
+            flex-direction: column;
+            font-family: "Moranga";
+            text-decoration: none;
+            line-height: 80%;
+            color: #fff;
+            -webkit-transform: scaleY(0.9);
+            transform: scaleY(0.9);
+            transition: all 0.5s ease-in-out;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            -webkit-filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.25));
+            -webkit-text-stroke-width: 8px;
+            &.bottom{
+                position: absolute;
+                left: 0;
+                top: 0;
+                -webkit-text-stroke-width: 0;
             }
         }
     }
     .nav-container{
         display: flex;
+        margin-left:auto;
         .btn:not(:last-of-type){margin-right:2rem;}
     }
 }

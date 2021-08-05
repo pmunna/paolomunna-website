@@ -8,8 +8,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
+import Header, {isActive} from "./header"
 import Footer from "./footer"
+import AboutMe from "./aboutme"
 
 import SiteLoader from "./loader.js"
 import "../assets/css/style.scss"
@@ -27,19 +28,15 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  
-  CSS.paintWorklet.addModule(
-    "https://www.unpkg.com/css-houdini-squircle@0.1.3/squircle.min.js"
-  );
 
   return (
-    <div className="page-container">
+    <div className={`page-container ${randColor}`}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <div className={`external-container ${randColor}`}>
-          <main>{children}</main>
-          <Footer />
-        </div>
-      
+      <div className={`external-container ${isActive ? "app" : null}`}>
+        <main>{children}</main>
+        <AboutMe />
+        {/*<Footer />*/}
+      </div>
     </div>
   )
 }

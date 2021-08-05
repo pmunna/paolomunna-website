@@ -25,3 +25,21 @@
     }
   }
 }
+
+@mixin recolor($color) {
+  h2, .h2{color: $color;}
+  .aboutme a{color: $color;}
+  background-color:$color;
+  .logo-name{-webkit-text-stroke-color: darken($color, 50%);}
+  .external-container{
+    --squircle-color:#{$color};
+    //box-shadow: inset 0 20px 100px 0px darken($color, 10%);
+    filter: drop-shadow(0 24px 16px darken($color, 10%));
+    &:after{
+      background-color: darken($color, 50%);
+    }
+    .flickity-slider img{
+      filter: drop-shadow(1rem 0 0 #00000020);
+    }
+  }
+}
